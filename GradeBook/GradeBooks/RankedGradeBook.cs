@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GradeBook.GradeBooks
 {
-    public class StandardGradeBook : BaseGradeBook
+    internal class RankedGradeBook : BaseGradeBook
     {
-        public StandardGradeBook(string name) : base(name)
+        public RankedGradeBook(string name) : base(name)
         {
         }
     }
