@@ -103,7 +103,7 @@ namespace GradeBook.GradeBooks
                 }
             }
         }
-
+        public GradeBookType Type { get; set; }
         public virtual double GetGPA(char letterGrade, StudentType studentType)
         {
             switch (letterGrade)
