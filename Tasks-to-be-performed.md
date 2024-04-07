@@ -91,7 +91,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- This should set `Type` to `GradeBookType.Ranked`.
 			- This should call the `BaseGradeBook` constructor by putting ` : base(name)` after the constructor declaration. _(This was not covered in the course, it calls the constructor of the inherited class.)_
 
-	- [ ] Override `RankedGradeBook`'s `GetLetterGrade` method
+	- [x ] Override `RankedGradeBook`'s `GetLetterGrade` method
 		- [ ] Provide the appropriate grades based on how the input grade compares to other students.
 			_(One way to solve this is to figure out how many students make up 20%, 
             then loop through all the grades and check how many scored higher than 
@@ -103,12 +103,12 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 			- Return D if the input grade is between the top 60 and 80% of the class.
 			- Return F if the grade is below the top 80% of the class.
 
-	- [ ] Override `RankedGradeBook`'s `CalculateStatistics` method
+	- [ x] Override `RankedGradeBook`'s `CalculateStatistics` method
 		- [ ] Short circuit the method if there are less than 5 students.
 			- If there are less than 5 students write "Ranked grading requires at least 5 students." to the Console.
 			- If there are 5 or more students call the base class's `CalculateStatistics` method using `base.CalculateStatistics`.
 
-	- [ ] Override `RankedGradeBook`'s `CalculateStudentStatistics` method
+	- [x ] Override `RankedGradeBook`'s `CalculateStudentStatistics` method
 		- [ ] Short circuit the method if there are less than 5 students.
 			- If there are less than 5 students write "Ranked grading requires at least 5 students." to the Console.
 			- If there are 5 or more students call the base class's `CalculateStudentStatistics` method using `base.CalculateStudentStatistics`.
@@ -125,7 +125,7 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 	- [ ] Update `StartingUserInterfaces`'s `HelpCommand` method
 		- [ ] Change where `HelpCommand` outlines the "create" command to write "Create 'Name' 'Type' - Creates a new gradebook where 'Name' is the name of the gradebook and 'Type' is what type of grading it should use." to the console.
 
-	- [ ] Make the `BaseGradeBook` class abstract
+	- [x ] Make the `BaseGradeBook` class abstract
 		- [ ] Add the `abstract` keyword to the `BaseGradeBook` declaration.
 
 - [ ] Add support for weighted GPAs
