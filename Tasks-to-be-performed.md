@@ -93,7 +93,9 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 
 	- [ ] Override `RankedGradeBook`'s `GetLetterGrade` method
 		- [ ] Provide the appropriate grades based on how the input grade compares to other students.
-			_(One way to solve this is to figure out how many students make up 20%, then loop through all the grades and check how many scored higher than the input average, every N students where N is that 20% value drop a letter grade.)_
+			_(One way to solve this is to figure out how many students make up 20%, 
+            then loop through all the grades and check how many scored higher than 
+		    the input average, every N students where N is that 20% value drop a letter grade.)_
 			- If there are less than 5 students throw an `InvalidOperationException`.
 			- Return A if the input grade is in the top 20% of the class.
 			- Return B if the input grade is between the top 20 and 40% of the class.
